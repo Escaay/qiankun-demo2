@@ -22,3 +22,4 @@ $ yarn start
 
 ## qiankun本地背景地址会失效，待解决
 ## 使用qiankun会导致路径重复刷新多次，页面组件重新挂载多次，如果在8001则不会
+## qiankun中img会被加上display:block,8001则不会
