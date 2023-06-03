@@ -1,0 +1,23 @@
+.bjImg{
+    // less使用css3动画需要套一层函数再返回,动画名不用加引号
+    .keyframesFunction(imgRotate,{
+        from{
+            transform: rotate(0deg)  translate(200px,200px) scale(0)
+        }to{
+            transform: rotate(-1080deg)  translate(0,0) scale(1)
+            
+        }
+    });
+    margin-left: 30px;
+    width: 200px; 
+    height: 230px;
+    border-radius: 10px;
+    animation: imgRotate 3s;
+    animation-timing-function:ease-out;
+    // animation-iteration-count:infinite;
+  }  
+  .keyframesFunction (@name,@content){
+    @keyframes @name{
+        @content();
+    }      
+}

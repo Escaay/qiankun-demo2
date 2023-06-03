@@ -1,0 +1,23 @@
+.firstTier{
+  display: flex;
+  flex-wrap: wrap;
+  .assideNav{
+  
+  } 
+  .content{
+    // 让宽度铺满全屏
+    flex: 1;
+    background: url('https://blog.fxss.work/assets/hero.197a9d2d.jpg');
+    background-size: cover;
+    padding-left: 20px;
+    height: 130vh;
+  }
+  .usersContent{
+    margin: 0 auto;
+  }
+  .nav{
+    width: 100%;
+  }
+}
+// 不用设置flex,也不用给宽度，他们会自动一行排列，因为侧边导航栏本身有宽度
+// 只需要加一些边距微调即可
