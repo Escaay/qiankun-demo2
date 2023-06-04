@@ -1,13 +1,13 @@
 ## Getting Started
 
 Install dependencies,
-
+1.分别在主应用和两个子应用都执行yarn安装依赖
 ```bash
 $ yarn
 ```
 
 Start the dev server,
-
+2.在基座micro-base执行yarn start开启服务
 ```bash
 $ yarn start
 ```
