@@ -14,6 +14,11 @@ Start the dev server,
 $ yarn start
 ```
 
+# 目录结构
+![image](./construction.png)
+# 数据流
+![image](./dataFlow.png)
+
 # umi-qiankun使用要点
     1.主子应用全部都要安装一份umi-qiankun
     2.主应用配置，子应用配置，子应用要在package.json加上对应name
