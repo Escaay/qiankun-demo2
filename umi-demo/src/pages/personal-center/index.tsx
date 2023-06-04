@@ -1,18 +1,20 @@
 import styles from './index.less';
-import {useHistory,useParams,useLocation,useRouteMatch} from 'umi'
-export default function PersonalCenter(state) {
-  // 如果是路由跳转过来那么参数是location,history,match,routes等
-  // 如果是子组件渲染，传的是props
-  // console.log('state',state);
-  let params=useParams()
-  // console.log('params:',params);
-  let location=useLocation()
-  // console.log('location:',location);
-  let routesMatch=useRouteMatch()
-  // console.log('routesMatch:',routesMatch);
+import React from 'react';
+import { Timeline } from 'antd';
+
+const PersonalCenter: React.FC = () => {
   return (
-    <div>
-      <h1>个人中心</h1>
+    <div className={styles.PersonalCenterList}>
+    <Timeline>
+      <Timeline.Item><span>2023-6-1:Begin to study UmiJs and Browser plugin</span></Timeline.Item>
+      <Timeline.Item><span>2023-6-2:Take up UmiJs and fix problems</span></Timeline.Item>
+      <Timeline.Item><span>2023-6-3:Perfect the demo and start attempt plasmo</span></Timeline.Item>
+      <Timeline.Item><span>2023-6-4:Optimize demos and Write documents</span></Timeline.Item>
+      <Timeline.Item><span>2023-6-5:Submit code</span></Timeline.Item>
+    </Timeline>
     </div>
   );
 }
+
+
+export default PersonalCenter
